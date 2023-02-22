@@ -14,22 +14,26 @@
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/container.css">
+    <link rel="stylesheet" href="CSS/section.css">
 </head>
 
 <body class="body">
-    <header>
-        <h1>Lista zadań</h1>
-    </header>
-    <section>
-        <h2>Dodaj nowe zadanie</h2>
-        <form method="POST">
-            <input type="text" placeholder="Co jest do zrobienia?">
-            <button>Dodaj zadanie</button>
-        </form>
-    </section>
-    <section>
-        <h2>Lista zadań</h2>
-    </section>
+    <div class="container">
+        <header>
+            <h1>Lista zadań</h1>
+        </header>
+        <section class="container__section">
+            <h2 class="container__heading">Dodaj nowe zadanie</h2>
+            <form method="POST" class="container__form">
+                <input class="container__input" type="text" placeholder="Co jest do zrobienia?">
+                <button class="container__button">Dodaj zadanie</button>
+            </form>
+        </section>
+        <section class="container__section">
+            <h2 class="container__heading">Lista zadań</h2>
+        </section>
+    </div>
 </body>
 
 </html>
