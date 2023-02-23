@@ -41,6 +41,14 @@
         })
     }
 
+    const clean = () => {
+        document.querySelector(".js-field").value = "";
+    }
+
+    const onFocus = () => {
+        document.querySelector(".js-field").focus();
+    }
+
     const onFormSubmit = (event) => {
         event.preventDefault();
         const newTask = document.querySelector(".js-field").value.trim();
@@ -53,6 +61,8 @@
             content: newTask,
         })
 
+        onFocus();
+        clean();
         render();
     }
 
