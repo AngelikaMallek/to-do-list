@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "Ugotować obiad",
-            done: false,
-        },
-        {
-            content: "Odkurzyć",
-            done: true,
-        }
-    ]
+    const tasks = [];
 
     const render = () => {
         let htmlString = "";
@@ -22,6 +13,28 @@
         document.querySelector(".js-list").innerHTML = htmlString;
     }
 
-    render();
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+        const newTask = document.querySelector(".js-field").value;
+
+        if (!newTask) {
+            return;
+        }
+
+        tasks.push({
+            content: newTask,
+        })
+
+        render();
+    }
+
+
+    const init = () => {
+
+        const form = document.querySelector(".js-form");
+        form.addEventListener("submit", onFormSubmit);
+    }
+
+    init();
 }
 
