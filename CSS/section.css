@@ -34,3 +34,7 @@
     padding: 10px;
     word-break: break-word;
 }
+
+.section__listItem--done {
+    text-decoration: line-through;
+}
