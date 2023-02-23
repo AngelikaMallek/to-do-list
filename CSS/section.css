@@ -19,6 +19,7 @@
     height: 30px;
     background-color: green;
     border: none;
+    text-decoration: none;
 }
 
 .section__listButton--delete {

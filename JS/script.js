@@ -15,10 +15,10 @@
         let htmlString = "";
 
         for (const task of tasks) {
-            htmlString += `<li class="section__listItem${task.done ? " section__listItem--done" : ""}">
+            htmlString += `<li class="section__listItem">
 
-            <button class="section__listButton js-done"></button>
-                ${task.content}
+            <button class="section__listButton js-done">${task.done ? "✔" : ""}</button>
+                <span class="${task.done ? " section__listItem--done" : ""}">${task.content}</span>
             <button class="section__listButton section__listButton--delete js-delete">✗</button>
 
             </li>`;
