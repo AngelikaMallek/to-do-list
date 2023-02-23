@@ -1,0 +1,36 @@
+.section {
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 15px hsl(0, 0%, 50%);
+}
+
+.section__heading {
+    border-bottom: 2px solid #ddd;
+    padding: 20px;
+}
+
+.section__list {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.section__listButton {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border: none;
+}
+
+.section__listButton--delete {
+    background-color: red;
+}
+
+.section__listItem {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    grid-gap: 10px;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    word-break: break-word;
+}

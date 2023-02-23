@@ -1,34 +1,3 @@
 .container {
     padding: 20px;
 }
-
-.container__section {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 15px hsl(0, 0%, 50%);
-}
-
-.container__heading {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 20px;
-}
-
-.container__button {
-    padding: 10px;
-    background-color: teal;
-    color: white;
-    flex-basis: 15%;
-    border: none;
-}
-
-.container__input {
-    padding: 10px;
-    flex-basis: 80%;
-    border: 1px solid #ddd;
-}
-
-.container__form {
-    display: flex;
-    justify-content: space-around;
-}

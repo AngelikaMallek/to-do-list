@@ -3,20 +3,20 @@
         {
             content: "Ugotować obiad",
             done: false,
-        }, 
+        },
         {
             content: "Odkurzyć",
             done: true,
         }
     ]
 
-    const  render = () => {
+    const render = () => {
         let htmlString = "";
 
-        for(const task of tasks) {
-            htmlString += `<li>
+        for (const task of tasks) {
+            htmlString += `<li class="section__listItem"><button class="section__listButton"></button>
                 ${task.content}
-            </li>`;
+            <button class="section__listButton section__listButton--delete">✗</button></li>`;
         }
 
         document.querySelector(".js-list").innerHTML = htmlString;

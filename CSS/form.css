@@ -1,0 +1,19 @@
+.form {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.form__button {
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    flex-basis: 15%;
+    border: none;
+}
+
+.form__field {
+    padding: 10px;
+    flex-basis: 80%;
+    border: 1px solid #ddd;
+}

@@ -15,6 +15,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/container.css">
+    <link rel="stylesheet" href="CSS/section.css">
+    <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="CSS/list.css">
     <script defer src="JS/script.js"></script>
 </head>
 
@@ -23,16 +26,16 @@
         <header>
             <h1>Lista zadań</h1>
         </header>
-        <section class="container__section">
-            <h2 class="container__heading">Dodaj nowe zadanie</h2>
-            <form method="POST" class="container__form">
-                <input class="container__input" type="text" placeholder="Co jest do zrobienia?">
-                <button class="container__button">Dodaj zadanie</button>
+        <section class="section">
+            <h2 class="section__heading">Dodaj nowe zadanie</h2>
+            <form method="POST" class="form">
+                <input class="form__field" type="text" placeholder="Co jest do zrobienia?">
+                <button class="form__button">Dodaj zadanie</button>
             </form>
         </section>
-        <section class="container__section">
-            <h2 class="container__heading">Lista zadań</h2>
-            <ul class="js-list"></ul>
+        <section class="section">
+            <h2 class="section__heading">Lista zadań</h2>
+            <ul class="section__list js-list"></ul>
         </section>
     </div>
 </body>
