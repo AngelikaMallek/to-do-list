@@ -17,13 +17,16 @@
 .section__listButton {
     width: 30px;
     height: 30px;
-    background-color: green;
+    background-color: red;
     border: none;
-    text-decoration: none;
 }
 
-.section__listButton--delete {
-    background-color: red;
+.section__listButton--done {
+    background-color: green;
+}
+
+.section__listButton--done:hover {
+    background-color: hsl(120, 100%, 35%);
 }
 
 .section__listItem {
