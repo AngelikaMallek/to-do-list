@@ -20,6 +20,10 @@
     border: none;
 }
 
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
 @media(max-width: 767px) {
     .form__button {
         margin-top: 10px;
