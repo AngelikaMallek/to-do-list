@@ -11,6 +11,24 @@
         render();
     }
 
+    const deleteTasks = () => {
+        const deleteButtons = document.querySelectorAll(".js-delete");
+        deleteButtons.forEach((deleteButton, index) => {
+            deleteButton.addEventListener("click", () => {
+                removeTasks(index);
+            });
+        })
+    }
+
+    const doneTasks = () => {
+        const doneButtons = document.querySelectorAll(".js-done");
+        doneButtons.forEach((doneButton, index) => {
+            doneButton.addEventListener("click", () => {
+                toogleTaskDone(index);
+            });
+        })
+    }
+
     const render = () => {
         let htmlString = "";
 
@@ -26,19 +44,8 @@
 
         document.querySelector(".js-list").innerHTML = htmlString;
 
-        const deleteButtons = document.querySelectorAll(".js-delete");
-        deleteButtons.forEach((deleteButton, index) => {
-            deleteButton.addEventListener("click", () => {
-                removeTasks(index);
-            });
-        })
-
-        const doneButtons = document.querySelectorAll(".js-done");
-        doneButtons.forEach((doneButton, index) => {
-            doneButton.addEventListener("click", () => {
-                toogleTaskDone(index);
-            });
-        })
+        deleteTasks();
+        doneTasks();
     }
 
     const clean = () => {
