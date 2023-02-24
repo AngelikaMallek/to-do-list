@@ -33,11 +33,11 @@
         let htmlString = "";
 
         for (const task of tasks) {
-            htmlString += `<li class="section__listItem">
+            htmlString += `<li class="list__item">
 
-            <button class="section__listButton section__listButton--done js-done">${task.done ? "✔" : ""}</button>
-                <span class="${task.done ? " section__listItem--done" : ""}">${task.content}</span>
-            <button class="section__listButton js-delete">✗</button>
+            <button class="list__button list__button--done js-done">${task.done ? "✔" : ""}</button>
+                <span class="${task.done ? " list__item--done" : ""}">${task.content}</span>
+            <button class="list__button js-delete">✗</button>
 
             </li>`;
         }
