@@ -61,6 +61,7 @@
         const newTask = document.querySelector(".js-field").value.trim();
 
         if (!newTask) {
+            onFocus();
             return;
         }
 
