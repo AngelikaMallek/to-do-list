@@ -22,6 +22,7 @@
 
 .form__button:hover {
     background-color: hsl(180, 100%, 30%);
+    cursor: pointer;
 }
 
 @media(max-width: 767px) {

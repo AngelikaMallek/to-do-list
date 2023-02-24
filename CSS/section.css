@@ -8,37 +8,3 @@
     border-bottom: 2px solid #ddd;
     padding: 20px;
 }
-
-.section__list {
-    list-style-type: none;
-    padding: 20px;
-}
-
-.section__listButton {
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    border: none;
-}
-
-.section__listButton--done {
-    background-color: green;
-}
-
-.section__listButton--done:hover {
-    background-color: hsl(120, 100%, 35%);
-}
-
-.section__listItem {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    grid-gap: 10px;
-    border-bottom: 2px solid #ddd;
-    padding: 10px;
-    word-break: break-word;
-}
-
-.section__listItem--done {
-    text-decoration: line-through;
-}
