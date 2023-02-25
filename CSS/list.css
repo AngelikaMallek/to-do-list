@@ -8,6 +8,7 @@
     height: 30px;
     background-color: red;
     border: none;
+    color: white;
 }
 
 .list__button:hover {
@@ -28,7 +29,7 @@
     grid-template-columns: auto 1fr auto;
     align-items: center;
     grid-gap: 10px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #dfdfdf;
     padding: 10px;
     word-break: break-word;
 }
