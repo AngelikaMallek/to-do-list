@@ -9,10 +9,12 @@
     background-color: red;
     border: none;
     color: white;
+    transition: background 1s;
 }
 
 .list__button:hover {
     cursor: pointer;
+    background-color: hsl(0, 100%, 65%);
 }
 
 .list__button--done {

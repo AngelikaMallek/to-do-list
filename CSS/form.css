@@ -18,11 +18,13 @@
     color: white;
     flex-basis: 15%;
     border: none;
+    transition: background 1s, transform 1s;
 }
 
 .form__button:hover {
     background-color: hsl(180, 100%, 30%);
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 @media(max-width: 767px) {
