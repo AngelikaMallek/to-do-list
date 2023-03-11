@@ -31,6 +31,9 @@
     .form__button {
         margin-top: 10px;
     }
+    .form__button:hover {
+        transform: scale(1);
+    }
 }
 
 .form__field {
