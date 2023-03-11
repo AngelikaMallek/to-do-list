@@ -1,13 +1,23 @@
 {
-    const tasks = [];
+    let tasks = [];
 
     const removeTasks = (index) => {
-        tasks.splice(index, 1);
+        tasks = [
+            ...tasks.slice(0, index),
+            ...tasks.slice(index + 1),
+        ]
         render();
     }
 
     const toogleTaskDone = (index) => {
-        tasks[index].done = !tasks[index].done;
+        tasks = [
+            ...tasks.slice(0, index),
+            {
+                ...tasks[index],
+                done: !tasks[index].done,
+            },
+            ...tasks.slice(index + 1),
+        ]
         render();
     }
 
@@ -64,9 +74,10 @@
             return;
         }
 
-        tasks.push({
-            content: newTask,
-        })
+        tasks = [
+            ...tasks,
+            { content: newTask },
+        ]
 
         render();
     }
