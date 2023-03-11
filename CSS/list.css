@@ -36,6 +36,10 @@
     word-break: break-word;
 }
 
+.list__item--hidden {
+    display: none;
+}
+
 .list__item--done {
     text-decoration: line-through;
 }
