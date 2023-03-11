@@ -8,4 +8,32 @@
     border-bottom: 2px solid #dfdfdf;
     padding: 20px;
     font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 767px) {
+    .section__heading{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 767px) {
+    .section__element{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.section__button {
+    background-color: white;
+    border: none;
+    color: teal;
+    transition: color 1s;
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 30%);
+    cursor: pointer;
 }

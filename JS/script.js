@@ -39,7 +39,7 @@
         })
     }
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -55,7 +55,22 @@
         }
 
         document.querySelector(".js-list").innerHTML = htmlString;
+    }
 
+    const renderButtons = () => {
+        let heading = "";
+
+        heading += `
+            <button class="section__button">Ukryj ukończone</button>
+            <button class="section__button">Ukończ wszystkie</button>
+        `;
+
+        document.querySelector(".js-headingButtons").innerHTML = heading;
+    }
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
         bindDeleteTaskButtons();
         bindToogleTaskDoneButtons();
     }
