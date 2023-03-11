@@ -42,3 +42,9 @@
     color: hsl(180, 100%, 30%);
     cursor: pointer;
 }
+
+.section__button:disabled {
+    color: grey;
+    cursor: auto;
+}
+

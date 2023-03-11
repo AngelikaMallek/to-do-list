@@ -63,11 +63,27 @@
         render();
     }
 
+    const doneAllTasks = () => {
+        tasks = tasks.map(
+            (task) => ({
+                ...task,
+                done: true,
+            })
+        );
+
+        render();
+    }
+
     const bindButtonEvents = () => {
         const hiddenDoneTaskButton = document.querySelector(".js-hiddenDoneTaskButton");
+        const finishedAllTasks = document.querySelector(".js-finishedAllTasks");
 
         if (hiddenDoneTaskButton) {
             hiddenDoneTaskButton.addEventListener("click", toogleHiddeDoneTask);
+        }
+
+        if (finishedAllTasks) {
+            finishedAllTasks.addEventListener("click", doneAllTasks);
         }
     }
 
@@ -78,8 +94,16 @@
             heading = "";
         } else {
             heading += `
-            <button class="section__button js-hiddenDoneTaskButton">${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
-            <button class="section__button">Ukończ wszystkie</button>
+            <button class="section__button js-hiddenDoneTaskButton">
+
+            ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
+
+            <button class="section__button js-finishedAllTasks"
+
+            ${tasks.every(({ done }) => done) ? "disabled" : ""}
+
+            >
+            Ukończ wszystkie</button>
         `;
         }
 
