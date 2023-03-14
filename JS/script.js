@@ -95,13 +95,9 @@
         } else {
             heading += `
             <button class="section__button js-hiddenDoneTaskButton">
-
             ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
-
             <button class="section__button js-finishedAllTasks"
-
             ${tasks.every(({ done }) => done) ? "disabled" : ""}
-
             >
             Ukończ wszystkie</button>
         `;
@@ -127,11 +123,6 @@
     }
 
     const addNewTask = (newTask) => {
-        if (!newTask) {
-            focusInput();
-            return;
-        }
-
         tasks = [
             ...tasks,
             { content: newTask },
@@ -147,6 +138,8 @@
 
         if (newTask) {
             addNewTask(newTask);
+        }else {
+            focusInput();
         }
 
         focusInput();
