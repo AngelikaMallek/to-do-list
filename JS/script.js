@@ -94,12 +94,16 @@
             heading = "";
         } else {
             heading += `
-            <button class="section__button js-hiddenDoneTaskButton">
-            ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
-            <button class="section__button js-finishedAllTasks"
-            ${tasks.every(({ done }) => done) ? "disabled" : ""}
-            >
-            Ukończ wszystkie</button>
+            <button 
+                class="section__button js-hiddenDoneTaskButton">
+                    ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone
+            </button>
+            <button 
+                class="section__button js-finishedAllTasks"
+                    ${tasks.every(({ done }) => done) ? "disabled" : ""}
+                >
+                    Ukończ wszystkie
+            </button>
         `;
         }
 
